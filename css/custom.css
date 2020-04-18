@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+
+
+
+.container{
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    background: #f6f9f9;
+}
+nav .container{}
+.logo{
+    width: 85%;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 35px;
+    font-size: 16px;
+    color: #2d3950 !important;
+    transition-duration:0.3s; 
+}
+.nav-link:hover{
+    color: #15A4FA !important;
+}
+header{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+header .row{
+    min-height: 600px;
+    align-items: center;
+}
+header h1{
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header span{
+    height: 3px;
+    display: block;
+    background: #15a4fa;
+    margin-bottom: 12px;
+}
+header p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+header .btn{
+    background-color: transparent;
+    border: 1px solid #15a4fa !important;
+    border-radius: 3px;
+    padding: 12px 36px;
+}
+header .btn:hover{
+    background:#2d3950 !important;
+}
+header a{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    color: #fff;
+    font-size: 15px;
+
+    animation-name: Move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Move{
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+header a:hover{
+    color:#fff;
+}
+
+
+
+/*banner-section*/
+.banner-section{
+    background: #f6f9f9;
+
+}
+.banner-section .row{
+    min-height: 340px;
+    align-items: center;
+}
+.banner-content {
+}
+.banner-content h3{
+    font-size: 40px;
+    color: #2d3950;
+    margin-bottom: 35px;
+    letter-spacing: 0.25px;
+}
+.banner-content p{
+    font-size: 18px;
+    color: #999999;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    margin: 0;
+}
+/*features-section*/
+.features-section{
+}
+.features-section .row{
+    min-height: 340px;
+    align-items: center;
+}
+.features-section span{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+.features-section i{
+    color: #fff;
+    font-size: 35px;
+    line-height: 100px;
+    text-shadow: 0 1px 2px #4e4d4d;
+}
+.features-section h4{
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #2d3950;
+    margin: 0;
+}
+.features-section p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #999999;
+    margin-top: 22px;
+    line-height: 22px;
+}
+/*portfolio-section*/
+.portfolio-section{
+    text-align: center;
+    overflow: hidden;
+}
+.all-portfolio{
+    min-height: 900px;
+    background: #f6f9f9;
+}
+.portfolio{
+    position: relative;
+}
+.portfolio-section h3{
+    font-size: 41px;
+    color: #2d3950;
+    letter-spacing: 0.25px;
+}
+.portfolio-section p{
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    color: #999999;
+    margin-bottom: 75px;
+}
+.portfolio-section .portfolio {
+    margin-bottom: 30px;
+}
+.portfolio-section .portfolio::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #15a4fa;
+    opacity: 0;
+    transition-duration: 0.4s;
+    transform: scale(0.5);
+}
+.portfolio-section .portfolio ul li{
+    padding:5px;
+}
+.portfolio-section .portfolio ul li a{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+.portfolio-section .portfolio ul li a:hover{
+    color: #2d3950ad;
+    border: 1px solid #2d3950ad;
+}
+.portfolio-section .portfolio:hover::before{
+    opacity: 0.9;
+    transform: scale(1);
+}
+.portfolio-section .portfolio img{}
+.portfolio-section .portfolio ul{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.portfolio-section .portfolio:hover ul{
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/*contact-section*/
+.contact-section{
+    background-image: url(../images/signup-background.jpg);
+    overflow: hidden;
+    position: relative;
+}
+.contact-row{
+    min-height: 700px;
+    align-items: center;
+}
+.contact-section span{
+    display: block;
+    background: #2c364b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.contact-section h2{
+    font-size: 41px;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+.contact-section p{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 0.25px;
+}
+.form-control{
+    background: #3f495d4a;
+    border: 1px solid #999999;
+}
+.contact-section li{
+    display: flex;
+    align-items: center;
+}
+.subscribe{
+    margin: 0;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+}
+.send-btn{
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    background-color: transparent;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    height: 40px;
+    width: 135px;
+}
+.send-btn:hover{
+    background:#15a4fa;
+
+}
+/*footer*/
+footer{
+    background: #f6f9f9;
+}
+footer .row{
+    min-height: 90px;
+    align-items: center;
+}
+footer p{
+    font-size: 15px;
+    color: #999999;
+    margin: 0;
+}
+footer ul{
+    justify-content: flex-end;
+}
+footer ul li{
+    margin: 0 5px;
+}
+footer ul li a{
+    font-size: 15px;
+    color: #fff;
+    background: #15A4FA;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+footer ul li a i{
+}
+footer ul li a:hover{
+    color: #2D3950;
+}
